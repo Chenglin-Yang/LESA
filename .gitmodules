@@ -1,0 +1,6 @@
+[submodule "LESA_detection"]
+	path = LESA_detection
+	url = https://github.com/Chenglin-Yang/LESA_detection
+[submodule "LESA_classification"]
+	path = LESA_classification
+	url = https://github.com/Chenglin-Yang/LESA_classification
