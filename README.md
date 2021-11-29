@@ -1,13 +1,25 @@
 # LESA
 
-<div align="center">
-  <img src="Images/figure1_v4.png" width="800px" />
-</div>
-
 ## Introduction
 
-This repository contains the official implementation of [Locally Enhanced Self-Attention: Rethinking Self-Attention as Local and Context Terms](http://arxiv.org/abs/2107.05637).
+This repository contains the official implementation of [Locally Enhanced Self-Attention: Combining Self-Attention and Convolution as Local and Context Terms](http://arxiv.org/abs/2107.05637).
 The code for image classification and object detection is based on [axial-deeplab](https://github.com/csrhddlam/axial-deeplab) and [mmdetection](https://github.com/open-mmlab/mmdetection). 
+
+<p align = "center">
+<img src = "Images/lesa_method_fig.png">
+</p>
+<p align = "center">
+Visualizing Locally Enhanced Self-Attention (LESA) at one spatial location. 
+</p>
+
+Image             |  Convolution | Self-Attention             |  LESA 
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+|<img src="./Images/img.jpg" width="200px" />|<img src="./Images/conv.jpg" width="200px" />|<img src="./Images/sa.jpg" width="200px" />|<img src="./Images/lesa.jpg" width="200px" /> 
+
+<p align = "center">
+Effectiveness  of  Locally  Enhanced  Self-Attention(LESA) on COCO object detection and instance segmentation. 
+</p>
+
 
 ## Citing LESA
 
