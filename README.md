@@ -12,6 +12,8 @@ The code for image classification and object detection is based on [axial-deepla
 Visualizing Locally Enhanced Self-Attention (LESA) at one spatial location. 
 </p>
 
+Self-Attention has become prevalent in computer vision models. Inspired by fully connected Conditional Random Fields (CRFs), we decompose self-attention into local and context terms. They correspond to the unary and binary terms in CRF and are implemented by attention mechanisms with projection matrices. We observe that the unary terms only make small contributions to the outputs, and meanwhile standard CNNs that rely solely on the unary terms achieve great performances on a variety of tasks. Therefore, we propose Locally Enhanced Self-Attention (LESA), which enhances the unary term by incorporating it with convolutions, and utilizes a fusion module to dynamically couple the unary and binary operations. In our experiments, we replace the self-attention modules with LESA. The results on ImageNet and COCO show the superiority of LESA over convolution and self-attention baselines for the tasks of image recognition, object detection, and instance segmentation.
+
 Image             |  Convolution | Self-Attention             |  LESA 
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 |<img src="./Images/img.jpg" width="200px" />|<img src="./Images/conv.jpg" width="200px" />|<img src="./Images/sa.jpg" width="200px" />|<img src="./Images/lesa.jpg" width="200px" /> 
